@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "CAw+QOTNhX6R/UIpGuTYlzYyks6CqI5/4b12/n8RVSBItJlS0POwmARC4crOoYf+CBa+G6KoXTQBp1K9Wya/zA==",
+  "success": true,
+  "projectFilePath": "/home/jin/dotnet/ex/ex.csproj",
+  "expectedPackageFiles": [
+    "/home/jin/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "/home/jin/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/home/jin/.nuget/packages/selenium.support/4.2.0/selenium.support.4.2.0.nupkg.sha512",
+    "/home/jin/.nuget/packages/selenium.webdriver/4.2.0/selenium.webdriver.4.2.0.nupkg.sha512",
+    "/home/jin/.nuget/packages/selenium.webdriver.chromedriver/99.0.4844.5100/selenium.webdriver.chromedriver.99.0.4844.5100.nupkg.sha512",
+    "/home/jin/.nuget/packages/system.configuration.configurationmanager/6.0.0/system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "/home/jin/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512",
+    "/home/jin/.nuget/packages/system.security.accesscontrol/6.0.0/system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "/home/jin/.nuget/packages/system.security.cryptography.protecteddata/6.0.0/system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "/home/jin/.nuget/packages/system.security.permissions/6.0.0/system.security.permissions.6.0.0.nupkg.sha512",
+    "/home/jin/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
