@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
-ENV CHROME_VERSION 99.0.4844.84
+ARG CHROME_VERSION 99.0.4844.84
 # Install Chrome
 RUN apt-get update && apt-get install -y \
 apt-transport-https \
