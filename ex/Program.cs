@@ -17,6 +17,7 @@ namespace SocksWebTrafficGet
             options.AddArgument("--headless");
             options.AddArgument("--no-sandbox");
             options.AddArgument("--disable-dev-shm-usage");
+            options.AddArgument(ConfigurationManager.AppSettings.Get("proxy"));
 
             var driver = new ChromeDriver(options);
             
