@@ -25,4 +25,4 @@ jobs:
           password: ${{ secrets.DOCKER_PWD }}
           registry: index.docker.io
           dockerfile: Dockerfile
-          tags: v1
+          tag: v1
