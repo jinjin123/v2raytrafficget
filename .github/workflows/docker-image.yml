@@ -23,6 +23,6 @@ jobs:
           image: zhexuezhenhanzi/jin
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PWD }}
-          registry: index.docker.io
+          registry: docker.io
           dockerfile: Dockerfile
           tag: dotnetseleiumv1
