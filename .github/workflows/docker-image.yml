@@ -17,9 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: docker build 
-        env:
-          docker_hub_user: ${{ secrets.DOCKER_USERNAME}}
-          docker_hub_pwd: ${{ secrets.DOCKER_PWD}}
         run: |
           #sudo docker login --username=${docker_hub_user} registry-1.docker.io --password=${{ secrets.docker_hub_pwd }}
           sudo docker build -t ${{ matrix.image-name }}:${{ matrix.image-version }} .
