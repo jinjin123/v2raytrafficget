@@ -21,12 +21,12 @@ jobs:
           docker_hub_user: ${{ secrets.DOCKER_USERNAME}}
           docker_hub_pwd: ${{ secrets.DOCKER_PWD}}
         run: |
-          sudo docker login --username=${docker_hub_user} registry-1.docker.io --password=${{ secrets.docker_hub_pwd }}
+          #sudo docker login --username=${docker_hub_user} registry-1.docker.io --password=${{ secrets.docker_hub_pwd }}
           sudo docker build -t ${{ matrix.image-name }}:${{ matrix.image-version }} .
           sudo docker tag ${{ matrix.image-name }}:${{ matrix.image-version }} zhexuezhenhanzi/jin:${{ matrix.image-name }}-${{ matrix.image-version }}
-          sudo docker push zhexuezhenhanzi/jin:${{ matrix.image-name }}-${{ matrix.image-version }}
-          #- name:  publish
-          #uses: elgohr/Publish-Docker-Github-Action@2.11
-          #username: ${{secrets.DOCKER_USERNAME}}
-          #password: ${{secrets.DOCKER_PWD}}
-          #registry: ${{secrets.DOCKER_REGISTRY}}
+          #sudo docker push zhexuezhenhanzi/jin:${{ matrix.image-name }}-${{ matrix.image-version }}
+      - name:  publish
+        uses: elgohr/Publish-Docker-Github-Action@2.11
+        username: ${{secrets.DOCKER_USERNAME}}
+        password: ${{secrets.DOCKER_PWD}}
+        registry: ${{secrets.DOCKER_REGISTRY}}
