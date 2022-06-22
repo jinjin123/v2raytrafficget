@@ -23,5 +23,5 @@ jobs:
         run: |
           sudo echo "${DOCKER_PASSWORD}"| docker login --username=${DOCKER_USERNAME} registry-1.docker.io  --password-stdin
           sudo docker build -t ${{ matrix.image-name }}:${{ matrix.image-version }} .
-          sudo docker tag ${{ matrix.image-name }}:${{ matrix.image-version }} zhexuezhenhanzi/jin:${{ matrix.image-name }}-${{ matrix.image-version }}
-          sudo docker push zhexuezhenhanzi/jin:${{ matrix.image-name }}-${{ matrix.image-version }}
+          sudo docker tag ${{ matrix.image-name }}:${{ matrix.image-version }} zhexuezhenhanzi/jin:${{ matrix.image-name }}
+          sudo docker push zhexuezhenhanzi/jin:${{ matrix.image-name }}
